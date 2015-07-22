@@ -1,12 +1,17 @@
 .modal-body p {
-	text-align: left;
+    text-align: left;
 }
 
 #partners a:visited {
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
-#partners a:hover {	
-	text-decoration: underline;
+#partners a:hover {
+    text-decoration: underline;
+}
+
+.partner-item.text-content {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.35);
 }

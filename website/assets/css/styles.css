@@ -500,7 +500,7 @@ table {
     filter: alpha(opacity=100); 
 }
 #footer .social-icons li img {
-    width:18px !important;
+    width:30px !important;
     height: auto !important
 }
 
