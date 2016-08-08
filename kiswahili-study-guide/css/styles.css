@@ -1,0 +1,18 @@
+
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar-inverse span.navbar-brand {
+  font-weight: bold;
+  color: #eee;
+}
+
+th {
+  text-align:center;
+}
