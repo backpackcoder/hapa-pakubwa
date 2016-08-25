@@ -3,7 +3,8 @@ FROM nginx
 RUN rm /etc/nginx/conf.d/default.conf
 RUN mkdir /etc/nginx/ssl
 
-COPY sites/website /usr/share/nginx/html
+COPY sites /usr/share/nginx/html
+
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY conf.d /etc/nginx/conf.d
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8">
+    <!-- Tell IE to use the latest, best version. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Hammer Family Mission Map</title>
+    <script src="Cesium/Cesium.js"></script>
+    <style>
+        @import url(Cesium/Widgets/widgets.css);
+
+        html, body, #cesiumContainer {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<script>
+    var extent = Cesium.Rectangle.fromDegrees(33.55969297641401, -8.89334461552577, 33.56466653274254, -8.89960286251948);
+
+    Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
+    Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
+    var viewer = new Cesium.Viewer('cesiumContainer', {
+        imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
+            url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+        }),
+        terrainProvider: new Cesium.CesiumTerrainProvider({
+            url : 'https://assets.agi.com/stk-terrain/world',
+            requestWaterMask: true,
+            requestVertexNormals : true
+        }),
+        animation: false,
+        timeline: false,
+        baseLayerPicker: false,
+        sceneModePicker: false,
+        geocoder: false,
+        infoBox: false,
+        scene3DOnly:true,
+        terrainExaggeration: 1.5,
+        navigationInstructionsInitiallyVisible: true
+    });
+    viewer.scene.globe.enableLighting = true;
+
+    var shucoLayer = new Cesium.UrlTemplateImageryProvider({
+        url: 'tiles/{z}/{x}/{reverseY}.png',
+    });
+    shucoLayer.readyPromise.then(function () {
+        shucoLayer.rectangle = extent;
+        shucoLayer.minimumLevel = 10;
+        shucoLayer.maximumLevel = 20;
+        viewer.scene.imageryLayers.addImageryProvider(shucoLayer);
+    });
+</script>
+</body>
+</html>
