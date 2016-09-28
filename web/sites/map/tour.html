@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumaini University Makumira - Mbeya - Virtual Tour</title>
+    <link rel="stylesheet" href="pannellum/pannellum.css"/>
+    <script type="text/javascript" src="pannellum/pannellum.js"></script>
+    <style>
+        html, body { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+        }
+        #panorama {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="panorama"></div>
+<script>
+    pannellum.viewer('panorama', {
+        "default": {
+            "firstScene": "location-6",
+            "sceneFadeDuration": 1000,
+            "autoLoad": true,
+            "hotSpotDebug": false,
+            "basePath": 'panos/',
+            "showFullscreenCtrl": false,
+            "showZoomCtrl": false
+        },
+        "scenes": {
+            "location-1": {
+                "title": "North Gate",
+                "type": "equirectangular",
+                "panorama": "location_1.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -2.3062889866508867,
+                        "yaw": -96.30730357999207,
+                        "targetYaw": -1.8497591507054496,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-18"
+                    },
+                    {
+                        "pitch": -1.02686257911049,
+                        "yaw": 173.40958912464163,
+                        "targetYaw": -92.31426008007837,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-10"
+                    }
+                ]
+            },
+            "location-2": {
+                "title": "Road",
+                "type": "equirectangular",
+                "panorama": "location_2.jpg",
+                "hotSpots": [
+                    {
+                        pitch: -1.3175138463853329, 
+                        yaw: -67.63285489252985,
+                        targetYaw: -111.40230201229707,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-3'      
+                    },
+                    {
+                        pitch: -1.0905468194652903, 
+                        yaw: 6.005519248872616,
+                        targetYaw: -145.58360336193607,
+                        type: 'scene',
+                        text: 'Library',
+                        sceneId: 'location-13'      
+                    },
+                    {
+                        pitch: -3.037248409992343, 
+                        yaw: 112.42605529773155,
+                        targetYaw: -54.037832759611824,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-11'      
+                    },
+                    {
+                        pitch: -3.012263253073684, 
+                        yaw: 50.51328790342612,
+                        targetYaw: -76.66104982619333,
+                        type: 'scene',
+                        text: 'Faculty Offices',
+                        sceneId: 'location-12'      
+                    }
+                ]
+            },
+            "location-3": {
+                "title": "Road",
+                "type": "equirectangular",
+                "panorama": "location_3.jpg",
+                "hotSpots": [
+                    {
+                        pitch: -2.384568951258116, 
+                        yaw: -1.517591150072949,
+                        targetYaw: 88.45106716288518,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-2'      
+                    },
+                    {
+                        pitch: -4.435101651861566, 
+                        yaw: -107.53462417127366,
+                        targetYaw: -89.02458936255958,
+                        type: 'scene',
+                        text: 'Student Hostel',
+                        sceneId: 'location-5'      
+                    }       
+                ]
+            },
+            "location-4": {
+                "title": "Student Area",
+                "type": "equirectangular",
+                "panorama": "location_4.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -2.0366923701569672, 
+                        yaw: 126.6819182319699,
+                        "targetYaw": 48.45905564624384,
+                        "type": "scene",
+                        "text": "Student Hostel",
+                        "sceneId": "location-5"
+                    },
+                    {
+                        "pitch": -2.687646474046333, 
+                        yaw: 7.886132173163718,
+                        "targetYaw": 15.729438693603633,
+                        "type": "scene",
+                        "text": "Front Gate",
+                        "sceneId": "location-6"
+                    },
+                ]
+            },
+            "location-5": {
+                "title": "Student Hostel",
+                "type": "equirectangular",
+                "panorama": "location_5.jpg",
+                "hotSpots": [
+                    {
+                        "pitch":-3.4957419649719115,
+                        "yaw": -89.10331422339766,
+                        "targetYaw": 161.39973385983845,
+                        "type": "scene",
+                        "text": "Front Gate",
+                        "sceneId": "location-6"
+                    },
+                    {
+                        "pitch": -2.556934684720589, 
+                        yaw: -145.26695861465822,
+                        "targetPitch": 0,
+                        "targetYaw": -40.028366194546365,
+                        "type": "scene",
+                        "text": "Student Area",
+                        "sceneId": "location-4"
+                    },
+                    {
+                        "pitch": -4.782811214460994,
+                        yaw: 93.78483315780171,
+                        "targetYaw": 3.212166678033608,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-3"
+                    },
+                    {
+                        "pitch": -3.1909354110457606, 
+                        yaw: 4.2769352480475655,
+                        "targetYaw":  83.90409377654893,
+                        "type": "scene",
+                        "text": "Lecture Halls",
+                        "sceneId": "location-15"
+                    }
+                ]
+            },
+            "location-6": {
+                "title": "Front Gate",
+                "type": "equirectangular",
+                "panorama": "location_6.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -2.3117673868111828, 
+                        yaw: -8.190941006051052,
+                        "targetYaw": 5.025165533979989,
+                        "type": "scene",
+                        "text": "Administration",
+                        "sceneId": "location-8"
+                    },
+                    {
+                        "pitch": -0.7847159971237905,
+                        "yaw": 38.69910371555415,
+                        "targetYaw": 78.9241358674175,
+                        "type": "scene",
+                        "text": "Student Hostel",
+                        "sceneId": "location-5"
+                    },                    
+                    {
+                        "pitch": -2.127073416457528,
+                        yaw: 117.66754931954894,
+                        "targetYaw": 169.9788580280569,
+                        "type": "scene",
+                        "text": "Student Area",
+                        "sceneId": "location-4"
+                    }
+                ]
+            },
+            "location-7": {
+                "title": "Road",
+                "type": "equirectangular",
+                "panorama": "location_7.jpg",
+                "hotSpots": [
+                    {
+                        "pitch":-3.4957419649719115,
+                        "yaw": -80.652663912303247,
+                        "targetYaw": -131.64182452903776,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-17"
+                    },
+                    {
+                        "pitch": -0.7847159971237905,
+                        "yaw": 38.69910371555415,
+                        "targetYaw": 57.61905358583624,
+                        "type": "scene",
+                        "text": "Administration",
+                        "sceneId": "location-8"
+                    },
+                    {
+                        pitch: -2.7627657800228382,
+                        yaw: -7.885337967394854,
+                        targetYaw: 134.5347314556664,
+                        "type": "scene",
+                        "text": "Lecture Halls",
+                        "sceneId": "location-16"
+                    }
+                ]
+            },
+            "location-8": {
+                "title": "Administration",
+                "type": "equirectangular",
+                "panorama": "location_8.jpg",
+                "hotSpots": [
+                    {
+                        pitch: -0.19561893421800114,
+                        yaw: 11.109961416090371,
+                        targetYaw: 94.7367924394822,
+                        "type": "scene",
+                        "text": "Lecture Halls",
+                        "sceneId": "location-16"
+                    },
+                    {
+                        pitch: 0.21505221674011882, 
+                        yaw: -80.1507540511445,
+                        targetYaw: -130.4550318126585,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-7"
+                    },
+                    {
+                        pitch: -1.8688111954127073, 
+                        yaw: 92.53137141602106,
+                        targetYaw: 151.27749778971767,
+                        "type": "scene",
+                        "text": "Front Gate",
+                        "sceneId": "location-6"
+                    }
+                ]
+            },
+            "location-9": {
+                "title": "Road",
+                "type": "equirectangular",
+                "panorama": "location_9.jpg",
+                "hotSpots": [
+                    {
+                        "pitch":-4.050969014577815,
+                        "yaw": -74.30563704249637,
+                        "targetYaw": 158.01459306023696,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-10"
+                    },
+                    {
+                        "pitch": -4.2035018988855954,
+                        "yaw": 111.57259642870154,
+                        "targetYaw": 60.89731176281015,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-17"
+                    }
+                ]
+            },
+            "location-10": {
+                "title": "Road",
+                "type": "equirectangular",
+                "panorama": "location_10.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -2.413627172453562,
+                        "yaw": 98.69350613667174,
+                        "targetYaw": 0,
+                        "type": "scene",
+                        "text": "North Gate",
+                        "sceneId": "location-1",
+                    },
+                    {
+                        "pitch": -1.8293480792224575,
+                        "yaw": 8.887794279179722,
+                        "targetYaw": 110.31211478652725,
+                        "type": "scene",
+                        "text": "Path",
+                        "sceneId": "location-9",
+                    },
+                    {
+                        pitch: -2.8372465583834434, 
+                        yaw: -82.49359134415408,
+                        targetYaw: 127.47088573586316,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-11'      
+                    }
+                ]
+            },
+            "location-11": {
+                "title": "Road",
+                "type": "equirectangular",
+                "panorama": "location_11.jpg",
+                "hotSpots": [
+                    {
+                        pitch: -2.926503871154848, 
+                        yaw: 130.61335600142226,
+                        targetYaw: -64.1896087285573,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-2'      
+                    },
+                    {
+                        pitch: -10.965061893458769, 
+                        yaw: -45.934393710945415,
+                        targetYaw: 106.08877988387312,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-10'      
+                    },
+                    {
+                        pitch: -3.672101197927472, 
+                        yaw: 189.28528660132244,
+                        targetYaw: -156.62699673040265,
+                        type: 'scene',
+                        text: 'Faculty Offices',
+                        sceneId: 'location-12'      
+                    }  
+                ]
+            },
+            "location-12": {
+                "title": "Faculty Offices",
+                "type": "equirectangular",
+                "panorama": "location_12.jpg",
+                "hotSpots": [
+                    {
+                        pitch: -2.7391581199935553, 
+                        yaw: -172.06420056501037,
+                        targetYaw: 135.2257458385522,
+                        type: 'scene',
+                        text: 'Library',
+                        sceneId: 'location-13'      
+                    },
+                    {
+                        pitch: -2.926503871154848, 
+                        yaw: 130.61335600142226,
+                        targetPitch: 0,
+                        targetYaw: -111.99577437948655,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-2'      
+                    },
+                    {
+                        pitch: -3.112586801590365, 
+                        yaw: -115.7058592448106,
+                        targetPitch: 0,
+                        targetYaw: -98.65417986047879,
+                        type: 'scene',
+                        text: 'Lecture Halls',
+                        sceneId: 'location-14'      
+                    },
+                    {
+                        pitch: -2.0767692704565914, 
+                        yaw: 14.353677746275881,
+                        targetPitch: 0,
+                        targetYaw: -2.8946034160017007,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-11'      
+                    }                            
+                ]
+            },
+            "location-13": {
+                "title": "Library",
+                "type": "equirectangular",
+                "panorama": "location_13.jpg",
+                "hotSpots": [
+                    {
+                        pitch: -4.271392760050463, 
+                        yaw: -117.4998896443876,
+                        targetPitch: 0,
+                        type: 'scene',
+                        text: 'Lecture Halls',
+                        sceneId: 'location-15'      
+                    },
+                    {
+                        pitch: -1.0905468194652903, 
+                        yaw: 6.005519248872616,
+                        targetPitch: 0,
+                        targetYaw: 39.1501610352025,
+                        type: 'scene',
+                        text: 'Faculty Offices',
+                        sceneId: 'location-12'      
+                    }                
+                ]
+            },
+            "location-14": {
+                "title": "Location 14",
+                "type": "equirectangular",
+                "panorama": "location_14.jpg",
+                "hotSpots": [
+{
+                        pitch: -3.4525085806475704, 
+                        yaw: -135.83954374401978,
+                        targetPitch: 0,
+                        targetYaw: -84.42625604997448,
+                        type: 'scene',
+                        text: 'Lecture Halls',
+                        sceneId: 'location-15'      
+                    },
+                    {
+                        pitch: -1.75471761501091, 
+                        yaw: -93.35055746849474,
+                        targetYaw: -103.21278735753464,
+                        type: 'scene',
+                        text: 'Lecture Halls',
+                        sceneId: 'location-16'      
+                    },
+                    {
+                        pitch: -1.5006876736849082, 
+                        yaw: 178.95309925513558,
+                        targetPitch: 0,
+                        targetYaw: 39.1501610352025,
+                        type: 'scene',
+                        text: 'Library',
+                        sceneId: 'location-13'      
+                    },
+                    {
+                        pitch: -2.6820790637245016, 
+                        yaw: 94.772737295483036,
+                        targetPitch: 0,
+                        type: 'scene',
+                        text: 'Faculty Offices',
+                        sceneId: 'location-12'      
+                    }  
+                ]
+            },
+            "location-15": {
+                "title": "Lecture Halls",
+                "type": "equirectangular",
+                "panorama": "location_15.jpg",
+                "hotSpots": [
+                    {
+                        pitch: 0.08228229880478415, 
+                        yaw: 4.4616430809742,
+                        targetPitch: 0,
+                        targetYaw: -84.42625604997448,
+                        type: 'scene',
+                        text: 'Lecture Halls',
+                        sceneId: 'location-16'      
+                    },
+                    {
+                        pitch: 2.0387106967127724, 
+                        yaw: -85.67247933904578,
+                        targetYaw: -176.84002526163604,
+                        type: 'scene',
+                        text: 'Student Hostel',
+                        sceneId: 'location-5'      
+                    },
+                    {
+                        pitch: -3.5032379374133362, 
+                        yaw: 160.68068184171443,
+                        targetPitch: 0,
+                        targetYaw: 39.1501610352025,
+                        type: 'scene',
+                        text: 'Library',
+                        sceneId: 'location-13'      
+                    },
+                    {
+                        pitch: -2.0676346929936575, 
+                        yaw: 95.71752313824236,
+                        targetPitch: 0,
+                        type: 'scene',
+                        text: 'Lecture Halls',
+                        sceneId: 'location-14'      
+                    }                                     
+                ]
+            },
+            "location-16": {
+                "title": "Lecture Halls",
+                "type": "equirectangular",
+                "panorama": "location_16.jpg",
+                "hotSpots": [
+                    {
+                        pitch: -2.1106097561125954,
+                        yaw: 0.904994038705351,
+                        targetYaw: -143.22480769181394,
+                        type: 'scene',
+                        text: 'Road',
+                        sceneId: 'location-17'
+                    },
+                    {
+                        pitch: -1.271506568759461, 
+                        yaw: -92.3618716593497,
+                        targetYaw: 134.26311444439213,
+                        type: 'scene',
+                        text: 'Administration',
+                        sceneId: 'location-8'
+                    },
+                    {
+                        pitch: -0.5758134667624311, 
+                        yaw: 93.29371079725163,
+                        targetYaw: -178.12905036276126,
+                        type: 'scene',
+                        text: 'Lecture Halls',
+                        sceneId: 'location-15'
+                    }
+                ]
+            },
+            "location-17": {
+                "title": "Road",
+                "type": "equirectangular",
+                "panorama": "location_17.jpg",
+                "hotSpots": [
+                    {
+                        "pitch":-2.5645544147171653,
+                        "yaw": -146.88509522509224,
+                        "targetPitch": 0,
+                        "targetYaw": -162.011898402927,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-18"
+                    },
+                    {
+                        "pitch":-0.7069267848836778,
+                        "yaw": -105.57763878403347,
+                        "targetPitch": 0,
+                        "targetYaw": -79.710559292398,
+                        "type": "scene",
+                        "text": "Path",
+                        "sceneId": "location-9",
+                    },
+                    {
+                        pitch: -2.2912115502061785,
+                        yaw: 72.28140635417058,
+                        "targetYaw": 62.307282926922696,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-7"
+                    },
+                    {
+                        pitch: -2.493915738152808,
+                        yaw: 33.682825837810626,
+                        targetYaw: 166.58763425311506,
+                        "type": "scene",
+                        "text": "Lecture Halls",
+                        "sceneId": "location-16"
+                    }
+                ]
+            },
+            "location-18": {
+                "title": "Road",
+                "type": "equirectangular",
+                "panorama": "location_18.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -0.764598193714111,
+                        "yaw": -139.9857429920846,
+                        "targetPitch": 0,
+                        "targetYaw": 95.03847231242742,
+                        "type": "scene",
+                        "text": "North Gate",
+                        "sceneId": "location-1"
+                    },
+                    {
+                        "pitch": -0.4670539570562253,
+                        "yaw": 1.1096304498670753,
+                        "targetYaw": 59.102512980994916,
+                        "type": "scene",
+                        "text": "Road",
+                        "sceneId": "location-17"
+                    }
+                ]
+            },
+        }
+    });
+</script>
+</body>
+</html>
